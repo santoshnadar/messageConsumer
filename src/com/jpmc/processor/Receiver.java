@@ -85,6 +85,7 @@ public class Receiver implements MessageListener {
 				generateFiftieththIntervalReport();
 				
 				synchronized (this){
+					//Pausing using thread wait()
 					//This area is new for me as I have not used thread commercially
 					this.wait();
 				}
